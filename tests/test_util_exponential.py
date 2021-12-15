@@ -9,11 +9,11 @@ class TestUtilsExponential(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print("-"*100)
-        print("\t\tSTART Exponential Distribution TEST SCENARIO")
+        print("\t\tSTART Exponential lst TEST SCENARIO")
         print("-"*100)
         if len(cls.lst)==0:
             Ex = Exponential()
-            Ex.generate(0.1,100)
+            Ex.generate(0.9,100)
             cls.Ex = Ex
             cls.lst = Ex.lst   
             cls.mean = cls.Ex.get_mean()
@@ -48,7 +48,7 @@ class TestUtilsExponential(unittest.TestCase):
     def test_var(self):
         self.var = self.Ex.get_var()
         n = len(self.lst)
-        self.assertTrue(round(self.var,2) < 1 and round(self.var,2) >= 0  )
+        self.assertTrue(round(self.var,2) < 1 and round(self.var,2) > 0  )
         self.assertTrue(int(round(self.var,2)*100) != 100 )
         self.assertNotIsInstance(self.var,int)
         self.assertIsInstance(self.var,float)
@@ -61,11 +61,11 @@ class TestUtilsExponential(unittest.TestCase):
         print("-"*100)
         print("\n\t\tVARIANCE:",cls.var,"\n\t\tMEAN:",cls.mean)
         print("-"*100)
-        print("\t\tEND OF Exponential Distribution TEST SCENARIO")
+        print("\t\tEND OF Exponential lst TEST SCENARIO")
         print("-"*100)
               
-if __name__ == '__main__':
-    unittest.main(verbosity=3,argv=['first-arg-is-ignored'], exit=False)
+#if __name__ == '__main__':
+    #unittest.main(verbosity=3,argv=['first-arg-is-ignored'], exit=False)
     
     
     

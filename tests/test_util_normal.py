@@ -9,7 +9,7 @@ class TestUtilsNormal(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         print("-"*100)
-        print("\t\tSTART Normal Distribution TEST SCENARIO")
+        print("\t\tSTART Normal lst TEST SCENARIO")
         print("-"*100)
         if len(cls.lst)==0:
             Ex = Normal()
@@ -60,11 +60,11 @@ class TestUtilsNormal(unittest.TestCase):
         print("-"*100)
         print("\n\t\tVARIANCE:",cls.var,"\n\t\tMEAN:",cls.mean)
         print("-"*100)
-        print("\t\tEND OF Normal Distribution TEST SCENARIO")
+        print("\t\tEND OF Normal lst TEST SCENARIO")
         print("-"*100)
               
-if __name__ == '__main__':
-    unittest.main(verbosity=3,argv=['first-arg-is-ignored'], exit=False)
+#if __name__ == '__main__':
+    #unittest.main(verbosity=3,argv=['first-arg-is-ignored'], exit=False)
     
     
     
