@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+GenerateRandomNumber.egg-info/PKG-INFO
+GenerateRandomNumber.egg-info/SOURCES.txt
+GenerateRandomNumber.egg-info/dependency_links.txt
+GenerateRandomNumber.egg-info/top_level.txt
+NumberGenerator/NumGen.py
+NumberGenerator/__init__.py
+NumberGenerator/Distributions/__init__.py
+NumberGenerator/Distributions/exponential.py
+NumberGenerator/Distributions/normal.py
+NumberGenerator/Distributions/uniform.py
+NumberGenerator/Sequences/Pentagon.py
+NumberGenerator/Sequences/Square.py
+NumberGenerator/Sequences/Triangle.py
+NumberGenerator/Sequences/__init__.py
